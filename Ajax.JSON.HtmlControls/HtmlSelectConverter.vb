@@ -1,0 +1,14 @@
+Imports System
+Imports System.Web.UI.HtmlControls
+
+Namespace Ajax.JSON.HtmlControls
+	Friend Class HtmlSelectConverter
+		Inherits HtmlControlConverter
+
+		Public Overrides ReadOnly Property SupportedTypes() As Type()
+			Get
+				Return New Type() { GetType(HtmlSelect) }
+			End Get
+		End Property
+	End Class
+End Namespace
