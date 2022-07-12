@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+   <PropertyGroup>
+      <ProjectGuid>{03D369A3-3D0C-4C5B-AA61-9626FF733187}</ProjectGuid>
+      <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+      <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+      <OutputType>Library</OutputType>
+      <AssemblyName>Ajax</AssemblyName>
+      <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+      <WarningLevel>4</WarningLevel>
+      <TargetFrameworkProfile/>
+   </PropertyGroup>
+   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+      <PlatformTarget>AnyCPU</PlatformTarget>
+   </PropertyGroup>
+   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <OutputPath>..\..\..\Build\Bin\$(Configuration)</OutputPath>
+      <DebugSymbols>true</DebugSymbols>
+      <DebugType>full</DebugType>
+      <Optimize>false</Optimize>
+   </PropertyGroup>
+   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <OutputPath>..\..\..\Build\Bin\$(Configuration)</OutputPath>
+      <DebugSymbols>true</DebugSymbols>
+      <DebugType>pdbonly</DebugType>
+      <Optimize>true</Optimize>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+      <WarningLevel>0</WarningLevel>
+      <Prefer32Bit>false</Prefer32Bit>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+      <WarningLevel>0</WarningLevel>
+      <Prefer32Bit>false</Prefer32Bit>
+      <Optimize>false</Optimize>
+      <DebugType>full</DebugType>
+   </PropertyGroup>
+   <ItemGroup>
+      <Reference Include="System"/>
+      <Reference Include="System.Data"/>
+      <Reference Include="System.Drawing"/>
+      <Reference Include="System.Web"/>
+      <Reference Include="System.Xml"/>
+   </ItemGroup>
+   <ItemGroup>
+      <Compile Include="Ajax.JSON.HtmlControls\HtmlAnchorConverter.vb"/>
+      <Compile Include="Ajax.JSON.HtmlControls\HtmlButtonConverter.vb"/>
+      <Compile Include="Ajax.JSON.HtmlControls\HtmlControlConverter.vb"/>
+      <Compile Include="Ajax.JSON.HtmlControls\HtmlImageConverter.vb"/>
+      <Compile Include="Ajax.JSON.HtmlControls\HtmlInputButtonConverter.vb"/>
+      <Compile Include="Ajax.JSON.HtmlControls\HtmlInputCheckBoxConverter.vb"/>
+      <Compile Include="Ajax.JSON.HtmlControls\HtmlInputRadioButtonConverter.vb"/>
+      <Compile Include="Ajax.JSON.HtmlControls\HtmlInputTextConverter.vb"/>
+      <Compile Include="Ajax.JSON.HtmlControls\HtmlSelectConverter.vb"/>
+      <Compile Include="Ajax.JSON.HtmlControls\HtmlTableCellConverter.vb"/>
+      <Compile Include="Ajax.JSON.HtmlControls\HtmlTableConverter.vb"/>
+      <Compile Include="Ajax.JSON.HtmlControls\HtmlTableRowConverter.vb"/>
+      <Compile Include="Ajax.JSON.HtmlControls\HtmlTextAreaConverter.vb"/>
+      <Compile Include="Ajax.JSON\ArrayListConverter.vb"/>
+      <Compile Include="Ajax.JSON\DataRowConverter.vb"/>
+      <Compile Include="Ajax.JSON\DataRowViewConverter.vb"/>
+      <Compile Include="Ajax.JSON\DataSetConverter.vb"/>
+      <Compile Include="Ajax.JSON\DataTableConverter.vb"/>
+      <Compile Include="Ajax.JSON\DataViewConverter.vb"/>
+      <Compile Include="Ajax.JSON\DateTimeConverter.vb"/>
+      <Compile Include="Ajax.JSON\DefaultConverter.vb"/>
+      <Compile Include="Ajax.JSON\GuidConverter.vb"/>
+      <Compile Include="Ajax.JSON\IAjaxObjectConverter.vb"/>
+      <Compile Include="Ajax.JSON\ICollectionConverter.vb"/>
+      <Compile Include="Ajax.JSON\ImageConverter.vb"/>
+      <Compile Include="Ajax.JSON\TimeSpanConverter.vb"/>
+      <Compile Include="Ajax\AjaxAsyncHandler.vb"/>
+      <Compile Include="Ajax\AjaxAsyncHandlerSessionStateR.vb"/>
+      <Compile Include="Ajax\AjaxAsyncHandlerSessionStateRW.vb"/>
+      <Compile Include="Ajax\AjaxConverterConfiguration.vb"/>
+      <Compile Include="Ajax\AjaxConverterConfigurationAction.vb"/>
+      <Compile Include="Ajax\AjaxConverterItem.vb"/>
+      <Compile Include="Ajax\AjaxConverterSectionHandler.vb"/>
+      <Compile Include="Ajax\AjaxHandler.vb"/>
+      <Compile Include="Ajax\AjaxHandlerSessionStateR.vb"/>
+      <Compile Include="Ajax\AjaxHandlerSessionStateRW.vb"/>
+      <Compile Include="Ajax\AjaxHtmlControlConverter.vb"/>
+      <Compile Include="Ajax\AjaxMethodAttribute.vb"/>
+      <Compile Include="Ajax\AjaxProcessor.vb"/>
+      <Compile Include="Ajax\AjaxRequestProcessor.vb"/>
+      <Compile Include="Ajax\AjaxRequireSessionStateAttribute.vb"/>
+      <Compile Include="Ajax\AjaxSecurityModule.vb"/>
+      <Compile Include="Ajax\AjaxSettings.vb"/>
+      <Compile Include="Ajax\AjaxSettingsSectionHandler.vb"/>
+      <Compile Include="Ajax\AjaxSettingsTemporaryFiles.vb"/>
+      <Compile Include="Ajax\AjaxXmlHttpAttribute.vb"/>
+      <Compile Include="Ajax\AsyncRequest.vb"/>
+      <Compile Include="Ajax\AsyncRequestState.vb"/>
+      <Compile Include="Ajax\HttpConnectionProtocolType.vb"/>
+      <Compile Include="Ajax\HttpSessionStateRequirement.vb"/>
+      <Compile Include="Ajax\PageHandlerFactory.vb"/>
+      <Compile Include="Ajax\Utility.vb"/>
+      <Compile Include="MS.Utilities\MD5Helper.vb"/>
+      <Compile Include="MS.Web\PageHandler.vb"/>
+      <Compile Include="MS.Web\Request.vb"/>
+      <Compile Include="My Project\AssemblyInfo.vb"/>
+   </ItemGroup>
+   <ItemGroup>
+      <EmbeddedResource Include="Ajax\ajax.js"/>
+      <EmbeddedResource Include="Ajax\ajax_mobile.js"/>
+   </ItemGroup>
+   <ItemGroup>
+      <Import Include="Microsoft.VisualBasic"/>
+      <Import Include="System"/>
+      <Import Include="System.Collections"/>
+      <Import Include="System.Collections.Generic"/>
+      <Import Include="System.Diagnostics"/>
+   </ItemGroup>
+   <ItemGroup>
+      <Folder Include="My Project\"/>
+   </ItemGroup>
+   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets"/>
+   <Import Project="$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets"/>
+   <Import Project="..\..\..\buildtools\AxBuildCommon.Targets"/>
+</Project>

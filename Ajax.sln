@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1778
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ajax", "Ajax.vbproj", "{03D369A3-3D0C-4C5B-AA61-9626FF733187}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TeleHealth", "..\..\..\..\v74_latesttwilio\Excelicare\WebApp\General\TwilioVideoConference\TeleHealth_aspnet\TeleHealth.vbproj", "{B81C9418-442A-497E-870F-6CA0BB5E5701}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03D369A3-3D0C-4C5B-AA61-9626FF733187}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03D369A3-3D0C-4C5B-AA61-9626FF733187}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03D369A3-3D0C-4C5B-AA61-9626FF733187}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03D369A3-3D0C-4C5B-AA61-9626FF733187}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B81C9418-442A-497E-870F-6CA0BB5E5701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B81C9418-442A-497E-870F-6CA0BB5E5701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B81C9418-442A-497E-870F-6CA0BB5E5701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B81C9418-442A-497E-870F-6CA0BB5E5701}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6D7B93E-09F4-4AD3-8D22-EA9D0F0DFEA7}
+	EndGlobalSection
+EndGlobal
