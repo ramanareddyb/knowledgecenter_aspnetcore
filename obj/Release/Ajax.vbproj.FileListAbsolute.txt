@@ -1,0 +1,6 @@
+D:\GitSourceCode\v7.4\Build\Bin\Release\Ajax.dll
+D:\GitSourceCode\v7.4\Build\Bin\Release\Ajax.pdb
+D:\GitSourceCode\v7.4\ExcelicareFX\Source\Ajax\obj\Release\Ajax.vbprojAssemblyReference.cache
+D:\GitSourceCode\v7.4\ExcelicareFX\Source\Ajax\obj\Release\Ajax.vbproj.CoreCompileInputs.cache
+D:\GitSourceCode\v7.4\ExcelicareFX\Source\Ajax\obj\Release\Ajax.dll
+D:\GitSourceCode\v7.4\ExcelicareFX\Source\Ajax\obj\Release\Ajax.pdb
