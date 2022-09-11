@@ -1,0 +1,41 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+<script src="./App.js"></script>
+
+<div ng-app="testApp" data-ng-controller="testController">
+  <table border="1">
+     <tr>
+
+		  
+       <th>
+	   <a href="#" ng-click="orderByField='Source'; reverseSort = !reverseSort">
+          Source 
+          </a>
+	   
+	  </th>
+      <th>
+	   <a href="#" ng-click="orderByField='Type'; reverseSort = !reverseSort">
+          Type 
+          </a>
+	   
+	  </th>
+        <th>
+	   <a href="#" ng-click="orderByField='Message'; reverseSort = !reverseSort">
+          Message 
+          </a>
+	   
+	  </th>
+	    <th>
+	   <a href="#" ng-click="orderByField='TimeLogged'; reverseSort = !reverseSort">
+          TimeLogged 
+          </a>
+	   
+	  </th>
+     <tr>
+     <tr ng-repeat="item in students|orderBy:orderByField:reverseSort">
+       <td>{{item.Source}}</td>
+       <td>{{item.Type}}</td>
+       <td>{{item.Message}}</td>
+	   <td>{{item.TimeLogged | date:"dd/MM/yyyy" }}</td>
+     </tr>
+</table>
+</div>

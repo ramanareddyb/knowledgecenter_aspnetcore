@@ -1,0 +1,24 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+<script src="./App.js"></script>
+
+<div ng-app="testApp" data-ng-controller="testController">
+  <table border="1">
+     <tr>
+                <th>S.No.</th>
+                <th>Name </th>
+                <th>Phone </th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Image</th>
+                <th>Email</th></tr>
+            <tr ng-repeat="emp in employees">
+                <td>{{$index+1}}</td>
+                <td>{{emp.Name}}</td>
+                <td>{{emp.Phone }}</td>
+                <td>{{emp.Department}}</td>
+                <td>{{emp.Salary }}</td>
+                <td><img ng-src="{{emp.ImagePath || 'images/image.jpg'}}" alt="" title="{{emp.Name}}" width="150" height="150" /></td>
+                <td>{{emp.EmailId ||'email not available' }}</td>
+            </tr>
+        </table>
+</div>

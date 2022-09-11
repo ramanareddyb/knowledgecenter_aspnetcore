@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body onload="myFunction">
+<form autocomplete="on">
+<h1>Welcome to my Home Page</h1>
+
+<p>Close this window or press F5 to reload the page.</p>
+<p><strong>Note:</strong> Due to different browser settings, this event may not always work as expected.</p>
+<input name="LN" type="text" id="LN" tabindex="1" autocomplete="off" value="" maxlength="200" placeHolder="UserName" autocomplete="on">
+<script language="text/jacascript">
+
+window.onbeforeunload = unloadFunction;
+function unloadFunction(){alert('closed');return "Browser Closed.";}
+
+function myFunction1() {
+debugger;
+    alert("Thank you for visiting W3Schools!");
+}
+</script>
+
+</form>
+</body>
+</html>
