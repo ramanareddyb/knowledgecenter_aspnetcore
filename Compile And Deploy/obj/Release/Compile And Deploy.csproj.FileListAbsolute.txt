@@ -1,0 +1,12 @@
+C:\Users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\bin\Release\Compile And Deploy.exe
+C:\Users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\bin\Release\Compile And Deploy.pdb
+C:\Users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\bin\Release\AxCommonFun.dll
+C:\Users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\bin\Release\Interop.SourceSafeTypeLib.dll
+C:\Users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\bin\Release\AxCommonFun.pdb
+C:\Users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\obj\Release\Compile_And_Deploy.Form1.resources
+C:\Users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\obj\Release\Compile_And_Deploy.Properties.Resources.resources
+C:\Users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\obj\Release\Compile And Deploy.csproj.GenerateResource.Cache
+C:\Users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\obj\Release\Compile And Deploy.exe
+C:\Users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\obj\Release\Compile And Deploy.pdb
+C:\Users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\obj\Release\Compile And Deploy.csprojResolveAssemblyReference.cache

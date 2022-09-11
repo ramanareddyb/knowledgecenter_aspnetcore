@@ -1,0 +1,22 @@
+c:\users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\obj\Debug\Compile_And_Deploy.Form1.resources
+c:\users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\obj\Debug\Compile_And_Deploy.Properties.Resources.resources
+c:\users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\obj\Debug\Compile And Deploy.csproj.GenerateResource.Cache
+c:\users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\bin\Debug\Compile And Deploy.exe
+c:\users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\bin\Debug\Compile And Deploy.pdb
+c:\users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\obj\Debug\Compile And Deploy.exe
+c:\users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\obj\Debug\Compile And Deploy.pdb
+C:\Users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\obj\Debug\Compile And Deploy.csprojResolveAssemblyReference.cache
+C:\Users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\bin\Debug\AxCommonFun.dll
+C:\Users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\bin\Debug\Interop.SourceSafeTypeLib.dll
+C:\Users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\vikram\documents\visual studio 2013\Projects\Compile And Deploy\Compile And Deploy\bin\Debug\AxCommonFun.pdb
+D:\Compile And Deploy\obj\Debug\Compile And Deploy.csprojResolveAssemblyReference.cache
+D:\Compile And Deploy\obj\Debug\Compile_And_Deploy.Form1.resources
+D:\Compile And Deploy\obj\Debug\Compile_And_Deploy.Properties.Resources.resources
+D:\Compile And Deploy\obj\Debug\Compile And Deploy.csproj.GenerateResource.Cache
+D:\Compile And Deploy\obj\Debug\Compile And Deploy.exe
+D:\Compile And Deploy\bin\Debug\Compile And Deploy.exe
+D:\Compile And Deploy\bin\Debug\Compile And Deploy.pdb
+D:\Compile And Deploy\bin\Debug\Interop.SourceSafeTypeLib.dll
+D:\Compile And Deploy\bin\Debug\AxCommonFun.pdb
+D:\Compile And Deploy\obj\Debug\Compile And Deploy.pdb

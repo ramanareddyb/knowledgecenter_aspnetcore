@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[Compile And Deploy.csproj]
+SCC_Aux_Path = "\\192.168.100.11\vssdb\AxProductVSSDB 2013"
+SCC_Project_Name = "$/Product Development/ReleaseTools/Compile And Deployment Tool/Compile And Deploy/Compile And Deploy", RSITAAAA

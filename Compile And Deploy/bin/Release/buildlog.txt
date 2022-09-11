@@ -1,0 +1,2 @@
+E:\AxProductVSSDB 2013\Product Development\ECVSS6.00\ExcelicareWebT1\CustomControls\AxWebDictionary\WebUI\frmDictionary.aspx.vb(235): error BC30002: Type 'JsonConvert' is not defined.
+E:\AxProductVSSDB 2013\Product Development\ECVSS6.00\ExcelicareWebT1\CustomControls\AxWebDictionary\WebUI\frmDictionary.aspx.vb(609): error BC30002: Type 'JsonConvert' is not defined.
