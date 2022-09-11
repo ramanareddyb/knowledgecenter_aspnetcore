@@ -1,0 +1,30 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <UsingTask TaskName="SmallSharpTools.Packer.MSBuild.Packer"
+             AssemblyFile="SmallSharpTools.Packer.dll" />
+
+  <PropertyGroup>
+  
+  <!--  For only one File          _DestFolder = File Contains Folder Path   &&   _PackageTempDir = File Path
+	    For more that one File     _DestFolder = File Contains Folder Path   &&   _PackageTempDir = Folder Path -->  
+	<_DestFolder>D:\Testing\Testing Minification\Test\Scripts\</_DestFolder>	
+    <_PackageTempDir>C:\Users\sameer\Desktop\TestDemo\Scripts\AutoHibernate.js</_PackageTempDir>  
+	
+  </PropertyGroup>  	 
+			   
+  <Target Name="CompressJsAndCss">    
+    <ItemGroup>
+	<!-- only one File  -->
+	  <_JavaScriptFiles Include="$(_PackageTempDir)" />
+	<!-- For Folder -->
+	  <!-- <_JavaScriptFiles Include="$(_PackageTempDir)\**\*.js" /> -->
+    </ItemGroup>
+
+    <Message Text="Compressing JavaScript files" Importance="high" />    
+    <Packer InputFiles="%(_JavaScriptFiles.Identity)"
+            OutputFileName="@(_JavaScriptFiles->'$(_DestFolder)\%(RecursiveDir)%(Filename)%(Extension)')"
+            Mode="JSMin"
+            Verbose="false"
+            Condition=" '@(_JavaScriptFiles)' != ''" />			   
+  </Target>  
+</Project>

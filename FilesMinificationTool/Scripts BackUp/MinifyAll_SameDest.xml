@@ -1,0 +1,33 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <UsingTask TaskName="SmallSharpTools.Packer.MSBuild.Packer"
+             AssemblyFile="SmallSharpTools.Packer.dll" />
+
+  <PropertyGroup>
+	<!-- <_DestFolder>D:\Testing\Testing Minification\Test\Scripts\</_DestFolder> -->
+    <_PackageTempDir>C:\Users\sameer\Desktop\TestDemo\Scripts\</_PackageTempDir>  
+  </PropertyGroup>  	 
+			   
+  <Target Name="CompressJsAndCss">
+  
+    <ItemGroup>
+	  <_JavaScriptFiles Include="$(_PackageTempDir)\**\*.js" />
+      <_CssFiles Include="$(_PackageTempDir)\**\*.css" />
+    </ItemGroup>
+	
+    <Message Text="Compressing JavaScript files" Importance="high" />    
+    <Packer InputFiles="%(_JavaScriptFiles.Identity)"
+            OutputFileName="@(_JavaScriptFiles->'$(_PackageTempDir)\%(RecursiveDir)%(Filename)%(Extension)')"
+            Mode="JSMin"
+            Verbose="false"
+            Condition=" '@(_JavaScriptFiles)' != ''" />
+			
+    <Message Text="Compressing CSS files" Importance="high" />
+    <Packer InputFiles="%(_CssFiles.Identity)"
+            OutputFileName="@(_CssFiles->'$(_PackageTempDir)\%(RecursiveDir)%(Filename)%(Extension)')"
+            Mode="CSSMin"
+            Verbose="false"
+            Condition=" '@(_CssFiles)' != '' "/>
+			
+  </Target>
+</Project>

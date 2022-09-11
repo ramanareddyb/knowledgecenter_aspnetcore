@@ -1,0 +1,33 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <UsingTask TaskName="SmallSharpTools.Packer.MSBuild.Packer"
+             AssemblyFile="SmallSharpTools.Packer.dll" />
+
+  <PropertyGroup>	
+    <!-- For only one File        _PackageTempDir = File Path
+		 For more that one File   _PackageTempDir = Folder Path -->
+    <_PackageTempDir>C:\Users\sameer\Desktop\TestDemo\Scripts\AxCommon.js</_PackageTempDir>  
+  </PropertyGroup>  	 
+			   
+  <Target Name="CompressJsAndCss">
+  
+    <ItemGroup>
+	    <!-- only one File  -->
+		    <_JavaScriptFiles Include="$(_PackageTempDir)" />
+	    <!-- For Folder -->		
+			<!-- <_JavaScriptFiles Include="$(_PackageTempDir)\**\*.js" />      --> 
+    </ItemGroup>
+	
+    <Message Text="Compressing JavaScript files" Importance="high" />    
+    <Packer InputFiles="%(_JavaScriptFiles.Identity)"
+            OutputFileName="@(_JavaScriptFiles->'$(_PackageTempDir)')"
+            Mode="JSMin"
+            Verbose="false"
+            Condition=" '@(_JavaScriptFiles)' != ''" />		   			
+			
+			<!-- For Only one File -->
+			<!-- OutputFileName="@(_JavaScriptFiles->'$(_PackageTempDir)')" -->
+			<!-- For Folder -->
+			<!-- OutputFileName="@(_JavaScriptFiles->'$(_PackageTempDir)\%(RecursiveDir)%(Filename)%(Extension)')" -->
+  </Target>
+</Project>

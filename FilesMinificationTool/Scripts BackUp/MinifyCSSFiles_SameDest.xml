@@ -1,0 +1,33 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <UsingTask TaskName="SmallSharpTools.Packer.MSBuild.Packer"
+             AssemblyFile="SmallSharpTools.Packer.dll" />
+
+  <PropertyGroup>	
+   <!-- For only one File   	 _PackageTempDir = File Path
+	   For more that one File    _PackageTempDir = Folder Path -->
+    <_PackageTempDir>C:\Users\sameer\Desktop\TestDemo\Scripts\device.css</_PackageTempDir>  
+  </PropertyGroup>  	 
+			   
+  <Target Name="CompressJsAndCss">  
+    <ItemGroup>	  
+			<!-- only one File  -->
+      <_CssFiles Include="$(_PackageTempDir)" />
+			<!-- For Folder -->	  
+      <!-- <_CssFiles Include="$(_PackageTempDir)\**\*.css" /> -->
+    </ItemGroup>
+	
+    <Message Text="Compressing CSS files" Importance="high" />
+    <Packer InputFiles="%(_CssFiles.Identity)"
+            OutputFileName="@(_CssFiles->'$(_PackageTempDir)')"
+            Mode="CSSMin"
+            Verbose="false"
+            Condition=" '@(_CssFiles)' != '' "/>
+			
+			<!-- For Only one File -->
+			<!-- OutputFileName="@(_CssFiles->'$(_PackageTempDir)')" -->
+			<!-- For Folder -->
+			<!-- OutputFileName="@(_CssFiles->'$(_PackageTempDir)\%(RecursiveDir)%(Filename)%(Extension)')" -->
+			
+  </Target>
+</Project>
