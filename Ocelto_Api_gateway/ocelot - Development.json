@@ -1,0 +1,60 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/user/{everything}",
+      "DownstreamScheme": "http",
+      "ServiceName": "user-service",
+      "DownstreamPathTemplate": "/v78svc/api/user/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "POST", "DELETE" ]
+    },
+    {
+      "UpstreamPathTemplate": "/token/{everything}",
+      "DownstreamScheme": "http",
+      "ServiceName": "token-service",
+      "DownstreamPathTemplate": "/v78svc/api/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "POST", "DELETE" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5124/"
+  }
+}
+
+
+
+/*{
+   "DownstreamPathTemplate": "/v78svc/api/user",
+   "DownstreamScheme": "http",
+   "DownstreamHostAndPorts": [
+     {
+       "Host": "localhost",
+       "Port": 80
+     }
+   ],
+   "UpstreamPathTemplate": "/userdetails",
+   "UpstreamHttpMethod": [ "Get" ]
+ },
+ {
+   "DownstreamPathTemplate": "/v78svc/api/user/{usertype}/{userid}",
+   "DownstreamScheme": "http",
+   "DownstreamHostAndPorts": [
+     {
+       "Host": "localhost",
+       "Port": 80
+     }
+   ],
+   "UpstreamPathTemplate": "/userdetails/{usertype}/{userid}",
+   "UpstreamHttpMethod": [ "Get" ]
+ },
+ {
+   "DownstreamPathTemplate": "/v78svc/api/register",
+   "DownstreamScheme": "http",
+   "DownstreamHostAndPorts": [
+     {
+       "Host": "localhost",
+       "Port": 80
+     }
+   ],
+   "UpstreamPathTemplate": "/register",
+   "UpstreamHttpMethod": [ "Post" ]
+ }*/

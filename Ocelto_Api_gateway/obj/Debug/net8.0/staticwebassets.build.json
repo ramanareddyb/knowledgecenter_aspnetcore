@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "EjIHqkJl+mTDW80559LARcS666tqqKIivGsFzNCAD9U=",
+  "Source": "Ocelto_Api_gateway",
+  "BasePath": "_content/Ocelto_Api_gateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
